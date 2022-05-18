@@ -12,8 +12,18 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Description',
+        name: 'description',
         message: 'Can you describe your project?'
+    },
+    {
+        type: 'input',
+        name: 'contents',
+        message: 'Consolidated table of contents.'
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'How can users install or apply this project?'
     },
     {
         type: 'input',
@@ -21,9 +31,14 @@ const questions = [
         message: 'What problem does this project solve?'
     },
     {
+        type: 'input',
+        name: 'credit',
+        message: 'Who would you like to share credit with'
+    },
+    {
         type: 'list',
         name: 'license',
-        message: 'Please choose the license used for this project: (Required)',
+        message: 'Please choose the license used for this project: ',
         choices: ['apache', 'mit', 'gnu']
     }
 ];
