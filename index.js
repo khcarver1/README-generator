@@ -17,11 +17,6 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contents',
-        message: 'Consolidated table of contents.'
-    },
-    {
-        type: 'input',
         name: 'installation',
         message: 'How can users install or apply this project?'
     },
@@ -30,16 +25,37 @@ const questions = [
         name: 'solution',
         message: 'What problem does this project solve?'
     },
+
+    {
+        type: 'input',
+        name: 'Tests',
+        message: 'What tests have been performed on this project?'
+    },
+    {
+        type: 'input',
+        name: 'Questions',
+        message: 'What questions still need to be resolved?'
+    },
     {
         type: 'input',
         name: 'credit',
-        message: 'Who would you like to share credit with'
+        message: 'Who would you like to share credit with?'
     },
     {
         type: 'list',
         name: 'license',
         message: 'Please choose the license used for this project: ',
         choices: ['apache', 'mit', 'gnu']
+    },
+    {
+        type: 'input',
+        name: 'GHuser',
+        message: 'What is your Github Username?'
+    },
+    {
+        type: 'input',
+        name: 'emailaddy',
+        message: 'What is your email address?'
     }
 ];
 

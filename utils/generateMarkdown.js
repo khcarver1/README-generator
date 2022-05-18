@@ -15,17 +15,23 @@ function generateMarkdown(data) {
   return `
   #project title 
   ${data.title}
-  ##descrition
+  ##Description
   ${data.description}
-  ##table of contents
-  ${data.contents}
-  ##installation
+  ##Table of Contents
+  "Description, Installation, Usage, License, Contributing, Tests, and Questions" 
+  ##Installation
   ${data.installation}
-  ##solution
+  ##Usage
   ${data.solution}
-  ##credit
+  ##Tests
+  ${data.Tests}
+  ##Questions
+  ${data.Questions}
+  ${"https://github.com/" + data.GHuser}
+  ${"I can be reached via email at " + data.emailaddy}
+  ##Contributing
   ${data.credit}
-  ##license
+  ##License
   ${data.license}
 `;
 }
